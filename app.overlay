@@ -1,0 +1,26 @@
+/{
+	aliases {
+		hx711-sensor = &hx711;
+	};
+
+
+	hx711: hx711 {
+		compatible = "avia,hx711";
+		status     = "okay";
+		dout-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		sck-gpios  = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		rate-hz    = <0>;
+		gain       = <1>;
+	};
+
+
+   vbatt {
+      compatible = "voltage-divider";
+      io-channels = <&adc 7>;
+      output-ohms = <510000>;
+      full-ohms   = <(1000000 + 510000)>;
+      power-gpios = <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_OPEN_DRAIN)>;
+   };
+
+};
+

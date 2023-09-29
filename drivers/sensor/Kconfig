@@ -1,0 +1,2 @@
+rsource "hx711/Kconfig"
+rsource "lsm6ds3tr/Kconfig"

@@ -1,0 +1,5 @@
+rsource "drivers/Kconfig"
+
+menu "Zephyr Kernel"
+source "Kconfig.zephyr"
+endmenu

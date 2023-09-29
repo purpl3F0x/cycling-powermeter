@@ -1,0 +1,16 @@
+
+BasedOnStyle: Mozilla
+AlignConsecutiveAssignments: 'true'
+AlignConsecutiveDeclarations: 'true'
+AlignConsecutiveMacros: 'true'
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: No
+ColumnLimit: 100
+MaxEmptyLinesToKeep: 2
+SeparateDefinitionBlocks: Leave
+ExperimentalAutoDetectBinPacking: 'true'
+
+BreakBeforeBraces: 'Custom'
+BreakBeforeBraces: 'Allman'
+IndentExternBlock: 'false'
